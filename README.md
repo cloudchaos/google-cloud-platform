@@ -1,5 +1,9 @@
-# Google Cloud Platform
->Chaos Engineering for Google Cloud Platform
+# CLOUD CHAOS
+Chaos Engineering for google cloud platform
+
+[![Slack](https://img.shields.io/badge/slack-join%20chat%20%E2%86%92-e01563.svg)](https://cloudchaos-community.slack.com)
+[![GitHub stars](https://img.shields.io/github/stars/cloudchaos/google-cloud-platform?style=social)](https://github.com/cloudchaos/google-cloud-platform/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/cloudchaos/google-cloud-platform)](https://github.com/cloudchaos/google-cloud-platform/issues)
 
 ## Getting started
 ### Installation
@@ -19,7 +23,7 @@ COMPUTE ENGINE  | IO UTILIZER | io
 
 
 ### Running chaos experiment
-```bash
+```shell
 bash ./scripts/runner.sh [SERVICE_NAME] [CHAOS_EXPERIMENT_TYPE] [CHAOS_DURATION(s)] [UNITS]
 
 Example:
