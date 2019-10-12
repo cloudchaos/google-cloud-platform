@@ -1,0 +1,6 @@
+CHAOS_DURATION: "{{ lookup('env','CHAOS_DURATION') }}" # Duration of chaos injection
+
+# Io Utilization
+IO_CHAOS: true
+IO_UTIL: "{{ lookup('env','CHAOS_UTIL') }}"
+

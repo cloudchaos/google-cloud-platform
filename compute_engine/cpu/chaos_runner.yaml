@@ -1,0 +1,14 @@
+- hosts: localhost
+  connection: local
+
+  vars_files:
+    - vars.yaml
+
+  tasks:
+    - name: Installing of chaos Dependencies
+      shell: sudo apt-get install stress
+
+    - block: 
+        - name: Increase CPU utilization
+          shell: stress --cpu {{ CPU_UTIL }} --timeout {{ CHAOS_DURATION }} 
+      when: "{{ CPU_CHAOS }}"

@@ -1,0 +1,6 @@
+CHAOS_DURATION: "{{ lookup('env','CHAOS_DURATION') }}" # Duration of chaos injection
+
+# CPU Utilization
+CPU_CHAOS: true
+CPU_UTIL: "{{ lookup('env','CHAOS_UTIL') }}"
+
